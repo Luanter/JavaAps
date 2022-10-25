@@ -11,10 +11,13 @@ public class Teste {
 //Utilizaçao dos metodo apresentar e usar equipamento que imprimem o nome cpf e equipamento atual:
         Pessoa.apresentar();
         Pessoa.usarEquipamento();
-//Alteração dinamica (runtime) do equipamento:
+        System.out.println();//Estetica
+//Alteração dinamica do codigo:
+        Pessoa.setNome("Maria Joana");
         Pessoa.setEquipamento(new Skate());
-//Metodo que imprime o equipamento atual:
+//Metodos que imprimem o conteudo:
         Pessoa.usarEquipamento();
+        Pessoa.getNome();
         System.out.println(); // Estetica
 //CLiente anual:
         Cliente Pessoa2 = new ClienteComAssinaturaAnual();
