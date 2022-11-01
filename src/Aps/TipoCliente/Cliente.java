@@ -7,6 +7,7 @@ public abstract class Cliente {
     TrocaEquipamento equipamento;
     protected String Nome;
     protected String Cpf;
+    protected String TipoCliente;
 //Metodos Get and Set para mudança dinamica de equipamento
     public TrocaEquipamento getEquipamento() {
         return equipamento;
@@ -35,7 +36,7 @@ public abstract class Cliente {
 
     //Metodo que imprime as variaveis de instancia herdadas nome e cpf do cliente.
     public void apresentar(){
-        System.out.printf("Meu nome é: %s \nMeu cpf é: %s \n",Nome,Cpf);
+        System.out.printf("Meu nome é: %s \nMeu cpf é: %s \nMeu tipo de assinatura é: %s \n",Nome,Cpf,TipoCliente);
     }
 //Metodo que imprime a variavel objeto(equipamento) atual do objeto cliente
     public abstract void usarEquipamento();
